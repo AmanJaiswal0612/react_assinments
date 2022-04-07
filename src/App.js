@@ -9,8 +9,12 @@ import JoinUS from './day1/JoinUS';
 import Login from './day1/Login';
 import Search from './day1/Search';
 import Settings from './day1/Settings';
+import Heading from './day1/Heading';
+import List from './day1/List';
 
 function App() {
+  const data1=["Apple" ,"Blackberry","iPhone","Windows Phone"]
+  const data2=["Samsung","HTC","Micromax","Apple"]
   return (
     <>
     <h1>By Craeting 8 Component</h1>
@@ -39,6 +43,10 @@ function App() {
       <Commonbtn name="Home" id="home"/>
       <Commonbtn name="Download" id="download"/>
     </div>
+    <Heading heading={"Mobile Operating System"}/>
+    <List d1={data1}/>
+    <Heading heading={"Mobile Manufacturers"}/>
+    <List d1={data2} />
     </>
   );
 }
